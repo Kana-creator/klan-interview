@@ -158,21 +158,24 @@ const Events: React.FC<Props> = ({}) => {
               <button
                 onClick={() => handlePageChange(currentPage - 1)}
                 disabled={currentPage === 1}
+                className="px-5"
               >
                 Previous
               </button>
-              <span style={{ margin: "0 10px" }}>
+              <span className="px-5">
                 Page {currentPage} of {totalPages}
               </span>
               <button
                 onClick={() => handlePageChange(currentPage + 1)}
                 disabled={currentPage === totalPages}
+                className="px-5"
               >
                 Next
               </button>
               <button
                 onClick={() => handlePageChange(totalPages)}
                 disabled={currentPage === totalPages}
+                className="px-5"
               >
                 Last
               </button>
